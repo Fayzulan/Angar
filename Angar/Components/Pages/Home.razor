@@ -2,29 +2,38 @@
 
 <PageTitle>Home</PageTitle>
 
-<MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows=true ShowBullets=true EnableSwipeGesture=true AutoCycle=true TData="object">
-    <MudCarouselItem Transition="Transition.Fade" Color="@Color.Primary">
-        <div class="d-flex" style="height:100%">
-            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" /> *@
-            <MudImage ObjectFit=ObjectFit.None Src="works/work1.jpg" Alt="Örebro Slott" Elevation="25" Class="rounded-lg" />
-        </div>
-    </MudCarouselItem>
-    <MudCarouselItem Transition="Transition.Fade" Color="@Color.Secondary">
-        <div class="d-flex" style="height:100%">
-            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" /> *@
-            <MudImage ObjectFit=ObjectFit.Contain Src="works/work2.jpg" Alt="Örebro Slott" Elevation="25" Class="rounded-lg" />
-        </div>
-    </MudCarouselItem>
-    <MudCarouselItem Transition="Transition.Fade">
-        <div class="d-flex" style="height:100%">
-            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" /> *@
-            <MudImage ObjectFit=ObjectFit.Fill Src="works/work3.jpg" Alt="Örebro Slott" Elevation="25" Class="rounded-lg" />
-        </div>
-    </MudCarouselItem>
-    <MudCarouselItem Transition="Transition.Fade">
-        <div class="d-flex" style="height:100%">
-            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" /> *@
-            <MudImage ObjectFit=ObjectFit.ScaleDown Src="works/work4.jpg" Alt="Örebro Slott" Elevation="25" Class="rounded-lg" />
-        </div>
-    </MudCarouselItem>
-</MudCarousel>
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 100%"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
